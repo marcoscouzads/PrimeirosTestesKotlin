@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Primeiro App</string>
+    <string name="botao_proximo">Proximo</string>
+    <string name="mensagem">Mensagem</string>
+</resources>

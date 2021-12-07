@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context=".Aula15">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Formulário de cadastro"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Nome Completo"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/editIdade"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:text="Sexo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/SexoGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/radioButtonFeminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMasculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+
+        android:text="cadastrar" />
+
+    <TextView
+        android:id="@+id/resultadoNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultadoIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultadoSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:onClick="proximaPag"
+        android:text="Avançar" />
+</LinearLayout>
